@@ -1,0 +1,224 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#bannedWords {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#exportBtn {
+    background-color: #2196F3;
+}
+
+#exportBtn:hover {
+    background-color: #1976D2;
+}
+
+#exportBtn:disabled {
+    background-color: #90CAF9;
+    cursor: not-allowed;
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.summary {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+}
+
+.summary p {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.current-task {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid #2196F3;
+}
+
+.current-task p {
+    margin: 5px 0;
+    color: #333;
+    word-break: break-all;
+}
+
+.current-task .progress {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+#status {
+    color: #666;
+    font-style: italic;
+}
+
+#productTitle {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#result ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#result li {
+    margin: 5px 0;
+}
+
+#result a {
+    color: #0066c0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#result a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+#result h3 {
+    color: #333;
+    margin: 15px 0 10px;
+    font-size: 16px;
+}
+
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* 自定义滚动条样式 */
+pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+code {
+    color: #333;
+}
+
+.export-container {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+#exportBtn {
+    background-color: #2196F3;
+}
+
+#exportBtn:hover {
+    background-color: #1976D2;
+}
+
+#exportBtn:disabled {
+    background-color: #90CAF9;
+    cursor: not-allowed;
+}

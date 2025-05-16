@@ -1,0 +1,14 @@
+{
+  "name": "amazon-scraper",
+  "version": "1.0.0",
+  "description": "Amazon product scraper with anti-detection",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.10.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "xlsx": "^0.18.5"
+  }
+}
