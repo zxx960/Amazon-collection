@@ -107,7 +107,7 @@ async function initBrowser() {
   if (!browserInstance) {
     browserInstance = await puppeteer.launch({
       executablePath: getChromiumPath(),
-      headless: false,
+      headless: true,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',

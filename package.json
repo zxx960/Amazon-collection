@@ -6,14 +6,41 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development electron ."
+    "dev": "cross-env NODE_ENV=development electron .",
+    "build": "electron-builder"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "electron": "^36.2.1",
     "puppeteer": "^21.10.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron": "^36.2.1"
+  },
+  "build": {
+    "appId": "com.example.amazonscraper",
+    "productName": "AmazonScraper",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "extraResources": [
+      {
+        "from": "node_modules/puppeteer/.local-chromium/win64-121.0.6167.85",
+        "to": "puppeteer-chromium/win64-121.0.6167.85",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
   }
 }
