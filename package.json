@@ -5,7 +5,12 @@
   "main": "main.js",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development electron ."
+  },
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^36.2.1",
     "puppeteer": "^21.10.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
